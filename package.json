@@ -6,7 +6,7 @@
   "scripts": {
     "reg-cn": "npm config set registry https://registry.npm.taobao.org",
     "reg-clear": "npm config delete registry",
-    "dev": "webpack-dev-server --devtool eval --display-error-details --progress --colors --hot --inline --config config.yylib-react-viewer.js ",
+    "dev": "webpack-dev-server --devtool --host 0.0.0.0 --display-error-details --progress --colors --hot --inline --config config.yylib-react-viewer.js ",
     "build": "set NODE_ENV=prod&&webpack --display-error-details --progress --colors -p --config config.yylib-react-viewer.js",
     "build-src": "set NODE_ENV=prod&&webpack --display-error-details --progress --colors -d --config config.yylib-react-viewer.js",
     "build-linux": "export NODE_ENV=prod&&webpack --display-error-details --progress --colors -p --config config.yylib-react-viewer.js",
