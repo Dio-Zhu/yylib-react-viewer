@@ -16,7 +16,10 @@ var options = {
   //根目录
   ,rootPath:__dirname
   //webpack-dev-server启动的端口
-  ,port:3002
+  ,port:3002,
+  devServer:{
+      disableHostCheck:true
+  }
   //相对路径
   //,path: path.join(__dirname, 'apps')
   //编译后的路径
