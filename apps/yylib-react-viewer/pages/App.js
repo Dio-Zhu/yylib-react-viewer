@@ -2,15 +2,18 @@
  * Created by ICOP
  * 应用统一入口
  */
-var React = require('react');
-import YYJZViewer from './YYlibReactViewer';
+import React,{Component} from 'react';
+import {YYCreateView} from 'yylib-business';
+import {connect} from 'zzj-genview';
 
-var App = React.createClass({
-    render: function () {
+const WrappedCreateView = connect(YYCreateView);
+
+class App extends Component{
+    render() {
         return (
-            <YYJZViewer />
+            <WrappedCreateView />
         );
     }
-});
+};
 
 module.exports = App;

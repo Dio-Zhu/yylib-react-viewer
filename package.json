@@ -45,6 +45,6 @@
   },
   "dependencies": {
     "yylib-react": "^0.97.98",
-    "zzj-genview": "latest"
+    "zzj-genview": "^0.3.10"
   }
 }

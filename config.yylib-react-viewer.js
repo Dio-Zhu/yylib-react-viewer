@@ -33,7 +33,7 @@ var options = {
 }
 //服务端产出路径
 if(process.env.NODE_ENV==='prod') {//生产环境
-  options.publicPath = '/icop-yylib-react-viewer-frontend';
+  options.publicPath = '';
 }
 //构建webpack配置
 module.exports = config.webpack(options);
