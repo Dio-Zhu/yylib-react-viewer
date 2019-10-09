@@ -1,7 +1,7 @@
 /**
  * 打包单个应用-合约云
  */
-var config = require('yylib-react/dist/config/webpack.config');
+var config = require('zzj-reactlib/dist/config/webpack.config');
 //打印启动信息
 config.initPrint(__filename);
 var path = require('path'); 
