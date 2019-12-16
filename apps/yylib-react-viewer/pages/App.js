@@ -4,9 +4,9 @@
  */
 import React,{Component} from 'react';
 import {YYCreateView} from 'yylib-business';
-import {connect} from 'zzj-genview';
+import {connectReactViewer} from 'ide-sdk-viewer';
 
-const WrappedCreateView = connect(YYCreateView);
+const WrappedCreateView = connectReactViewer(YYCreateView,React);
 
 class App extends Component{
     render() {
